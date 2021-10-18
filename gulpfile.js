@@ -15,7 +15,7 @@ var SASS_INCLUDE_PATHS = [
 
 var LIBRARIES_PATHS = [
   './node_modules/jquery/dist/jquery.min.js',
-  './node_modules/bootstrap/dist/js/bootstrap.min.js'
+  './node_modules/bootstrap/dist/js/bootstrap.js'
 ]
 
 function handleError (err) {
