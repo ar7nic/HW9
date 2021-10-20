@@ -9,8 +9,6 @@
     @media (max-width:890px) {
       min-height: 30vh;
     }
-
-    //height: 100%;
   }
   .try {
     background: url("../img/fedback_bg.jpg") center no-repeat;
@@ -22,14 +20,12 @@
     flex-direction: column;
     padding: 10px;
     &__body {
-
     }
     &__text {
       @include adaptiv-font(60,30);
       font-family: $secondary-font-family;
       font-weight: 200;
       color: $background-color;
-
       span {
         font-weight: 700;
       }
@@ -38,11 +34,9 @@
         margin: 0 0 40px;
       }
     }
-    &__button {}
   }
   &__block {
     background: url("../img/footer_logo.png") center no-repeat;
-    //background-size: auto;
   }
   &__container {
     padding-top: 78px;

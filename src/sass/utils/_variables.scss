@@ -8,7 +8,7 @@ $maxWidth: 2000;
 $container-width: 1470px;
 $grid-width: 1470px/2;
 
-$carousel-control-color:             #ffffff;
+$carousel-control-color:             $background-color;
 //$carousel-control-width:             15%;
 //$carousel-control-opacity:           .5;
 $carousel-control-hover-opacity:     .9;
@@ -19,7 +19,7 @@ $carousel-indicator-height:          10px;
 //$carousel-indicator-hit-area-height: 10px;
 //$carousel-indicator-spacer:          3px;
 //$carousel-indicator-opacity:         .5;
-$carousel-indicator-active-bg:       #ffffff;
+$carousel-indicator-active-bg:       $background-color;
 //$carousel-indicator-active-opacity:  1;
 //$carousel-indicator-transition:      opacity .6s ease;
 //

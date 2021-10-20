@@ -14,18 +14,9 @@
 }
 
 .about {
-  &__container {
-
-  }
-
-  &__header {
-    //margin: 100px 0 80px;
-  }
-
   &__body {
     margin: 0 0 108px;
   }
-
   &__row {
     display: flex;
     justify-content: space-between;
@@ -33,7 +24,6 @@
     margin: 0 -40px 80px;
     flex-wrap: wrap;
   }
-
   &__item {
     display: flex;
     flex-direction: column;
@@ -48,15 +38,12 @@
     @media (max-width:500px) {
       flex: 0 1 100%;
     }
-
   }
-
   &__image {
     width: 182px;
     height: 182px;
     border-radius: 50%;
     background-color: rgba($main-color,0.15);
-    //opacity: 0.15;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,15 +54,10 @@
         filter: brightness(200%);
       }
     }
-    //img {
-    //  z-index: 10;
-    //}
   }
-
   &__item-title {
     font-family: $secondary-font-family;
     color: $additional-color;
-    //margin: 0 0 10px;
     @include current-font(30px,400,320%);
     letter-spacing: 0.75px;
   }
@@ -90,14 +72,10 @@
 }
 
 .header-block {
-  //display: block;
   text-align: center;
   color: $main-color;
-  //margin-bottom: 100px;
   &__title {
-    //display: block;
     font-family: $secondary-font-family;
-    //@include current-font(60px,200,160%);
     @include adaptiv-font(60,40);
     font-weight: 200;
     line-height: 160%;
@@ -120,8 +98,7 @@
     }
   }
   &__sub-title {
-    @include current-font(18px,400,130%)
-
+    @include current-font(18px,400,130%);
   }
 }
 
@@ -168,19 +145,14 @@
   }
   &__title {
     font-family: $secondary-font-family;
-    //@include current-font(60px,200,160%);
     @include adaptiv-font(60,35);
     font-weight: 200;
     line-height: 160%;
     letter-spacing: 1.5px;
-    //color: $main-color;
   }
   &__text {
     @include current-font(18px,400,200%);
     letter-spacing: 0.45px;
-  }
-  &__button {
-    //display: inline-block;
   }
 }
 //********************************** feedback *************************************
@@ -188,20 +160,12 @@
 .feedback {
   background: url("../img/fedback_bg.jpg") center no-repeat;
   background-size: cover;
-  //mix-height: 700px;
   object-fit: cover;
-  //padding: 100px 0;
   .carousel-item {
     height: 700px;
     @media (max-height:700px) {
       height: 100vh;
     }
-    //height: 100%;
-    //display: block;
-    ////float: none;
-    //justify-content: center;
-    //align-items: center;
-    //padding: 200px 0;
   }
   .carousel-caption {
     top: 50%;
@@ -211,14 +175,12 @@
   }
   .carousel-indicators {
     bottom: 20%;
-    //right: -2.5%;
     @media (max-width:1200px) {
       bottom: 10%;
     }
     & .active {
       background-color: #ffffff;
     }
-
     button {
       border-radius: 50%;
       border: 2px solid #ffffff;
@@ -231,8 +193,6 @@
     height: 104px;
     border-radius: 50%;
     overflow: hidden;
-    //display: block;
-    //float: none;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -240,37 +200,29 @@
     img {
       object-fit: cover;
     }
-
   }
   p:nth-child(odd) {
     font-family: $secondary-font-family;
-    //@include current-font(30px,300,320%);
     @include adaptiv-font(30,22);
     font-weight: 300;
     letter-spacing: 0.75px;
     padding: 0 0 20px;
-    //text-align: left;
     color: $background-color;
     span {
       color: $secondary-color;
     }
   }
   p:nth-child(even) {
-    //font-family: Raleway;
     @include current-font(18px,300,100%);
     letter-spacing: 0.45px;
-    //text-align: left;
     color: rgba($background-color, 0.3);
   }
 }
+
 //******************************** services *********************************
 
 .services {
   background-color: rgba($main-color,0.10);
-  &__container {}
-  &__header {
-    //margin: 100px 0 80px;
-  }
   &__body {
     display: grid;
     gap: 40px;
@@ -282,8 +234,7 @@
       grid-template: repeat(4,1fr) / minmax(320px,740px);
       gap:5px;
       padding-bottom: 40px;
-  }
-
+    }
   }
   &__item {
     padding: 15px;
@@ -299,10 +250,7 @@
       align-items: center;
       flex-direction: column;
       text-align: center;
-      //grid-template: 100px 100px 1fr / 1fr;
-      //gap: 0;
     }
-//grid-auto-rows: 200px;
   }
   &__image {
     width: 94px;
@@ -316,30 +264,21 @@
   &__item-title {
     font-family: $secondary-font-family;
     @include adaptiv-font(60,35);
-    //@include current-font(60px,200,160%);
     font-weight: 200;
     line-height: 160%;
     letter-spacing: 1.5px;
     text-align: left;
-
-    //color: $main-color;
   }
   &__item-text {
-    //font-family: ProximaNova;
     @include current-font(18px,400,267%);
     letter-spacing: 0.45px;
     grid-column: 2/3;
-    //color: #87949e;
   }
 }
 
 //************************************ team ********************************************
 
 .team {
-  &__container {}
-  &__header {
-    //margin: 100px 0 80px;
-  }
   &__body {
     display: grid;
     justify-content: center;
@@ -358,9 +297,6 @@
     @media (min-width: 2030px) {
       grid-template: repeat(2,400px)/repeat(5,400px);
     }
-    //grid-auto-rows: 400px;
-    //grid-auto-columns: 400px;
-    //grid-auto-flow: column;
   }
   &__item {
     font-family: $secondary-font-family;
@@ -371,9 +307,6 @@
     justify-content: center;
     align-items: center;
     color: transparent;
-    //height: 400px;
-    //width: 400px;
-    //border: 1px solid #000000;
     background-color: #f9f9fa;
     &:nth-child(2n) {
       background-color: #e4e4e4;
@@ -386,7 +319,6 @@
       color: $background-color;
       transition: 0.5s;
     }
-
   }
 }
 
@@ -411,7 +343,6 @@
     @media (min-width:1150px) {
     grid-template: 1fr / repeat(4,1fr);
     }
-
   }
   &__item {
     display: grid;
@@ -443,28 +374,21 @@
     font-family: $secondary-font-family;
     @include current-font(60px,200,100%);
     letter-spacing: 1.5px;
-    //text-align: left;
     display: flex;
     align-items: end;
     color: $secondary-color;
     padding: 5px 35px;
   }
   &__name {
-    //font-family: ProximaNova;
     @include current-font(18px,400,100%);
     letter-spacing: 0.45px;
     color: rgba($main-color,0.4);
-    //display: flex;
-    //align-items: center;
     padding: 15px 35px 0;
     border-bottom: 1px solid rgba($main-color,0.1);
-    //text-align: left;
   }
   &__description {
-    //font-family: ProximaNova;
     @include current-font(18px,400,267%);
     letter-spacing: 0.45px;
-    //text-align: left;
     color: $main-color;
     display: flex;
     align-items: center;
@@ -476,16 +400,12 @@
     align-items: center;
     justify-content: start;
     padding: 8px 0 0 35px;
-    //font-family: ProximaNova;
     @include current-font(18px,700,100%);
     letter-spacing: 8px;
     text-transform: uppercase;
     color: $background-color;
     background-color: $secondary-color;
     transition: 0.5s;
-    //background-image: url("../img/icon.png");
-    //background-position: right;
-    //background-repeat: no-repeat;
     img {
       position: absolute;
       right: 35px;
@@ -503,18 +423,15 @@
     display: grid;
     gap: 50px;
     @media (max-width:600px) {
-      //grid-template: 1fr 1fr / 1fr;
       padding: 20px 10px;
     }
     @media (max-width:1499px) {
-      //grid-template: 1fr 1fr / 1fr;
       padding: 50px 10px;
       display: flex;
       flex-direction: column;
       .map__body {
         max-width: $container-width;
         padding: 0 30px;
-        //justify-self: center;
       }
     }
     @media (min-width:1500px) {
@@ -524,7 +441,6 @@
   }
   &__body {
     color: $main-color;
-    //flex: 0 1 40%;
     display: flex;
     max-width: $container-width/2;
     flex-direction: column;
@@ -539,12 +455,8 @@
     font-weight: 200;
     line-height: 1.6;
     letter-spacing: 1.5px;
-    //flex: 0 0 50px;
-    //text-align: left;
-    //color: $main-color;
     margin: 0 0 50px;
     @media (max-width:600px) {
-      //grid-template: 1fr 1fr / 1fr;
       margin: 0 0 20px;
     }
   }
@@ -553,15 +465,8 @@
     letter-spacing: 0.45px;
     margin: 0 0 70px;
     @media (max-width:600px) {
-      //grid-template: 1fr 1fr / 1fr;
       margin: 0 0 20px;
     }
-    //flex: 0 1 150px;
-    //text-align: left;
-    //color: #87949e;
-  }
-  &__button {
-    //flex: 0 1 50px;
   }
   &__mapping {
     @media (max-width:700px) {
@@ -575,6 +480,5 @@
         object-fit: scale-down;
       }
     }
-
   }
 }

@@ -1,8 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  //background: url("");
-  //background-color: #17daa3;
   min-height: 150px;
   position: absolute;
   top: 0;
@@ -11,20 +9,8 @@
   z-index: 100;
   &__container {
     display: flex;
-    //position: absolute;
-    //top: 0;
-
     justify-content: space-between;
     align-items: center;
-  }
-  &__top {
-
-  }
-  &__logo {
-
-  }
-  &__menu {
-
   }
   &__burger {
     display: none;
@@ -69,9 +55,6 @@
 }
 
 .menu {
-  //a:hover {
-  //  color: rgba(135, 148, 158, 0.45);
-  //}
   &__list {
     display: flex;
     justify-content: right;
@@ -79,7 +62,6 @@
     margin: 0;
   }
   &__item {
-    //padding: 15px;
     margin: 0 50px 0 0;
   }
   &__link {
@@ -94,17 +76,11 @@
   }
 }
 
-//.menu__link a {
-//  color: rgba(135, 148, 158, 0.45);
-//}
-
 .main {
-  //height: 100vh;
   background: url("../img/header_bg.jpg") center no-repeat;
   background-size: cover;
   position: relative;
   min-height: 100vh;
-  //z-index: -10;
   .carousel-item {
     min-height: 100vh;
   }
@@ -113,15 +89,12 @@
       bottom: 50px;
       left: 50%;
       margin: 0 0 0 -14px;
-
-      //z-index: 150;
   }
   .main__more-arrow_mov {
     position: relative;
     animation: arrow 1s infinite ease;
   }
   .carousel-caption {
-
     @media (min-width:461px) {
       top: 40%;
     }
@@ -136,33 +109,18 @@
     @media (max-width:1800px) {
       bottom: 12%;
     }
-    //right: -2.5%;
     & .active {
       background-color: #ffffff;
     }
     button {
-      //width: 10px;
-      //height: 10px;
       border-radius: 50%;
       border: 2px solid #ffffff;
       background: transparent;
       margin: 0 6px;
     }
-
   }
   .carousel-item {
-//    img {
-//      width: 100%;
-//      height: 100%;
-//      object-fit: cover;
-//////      position: absolute;
-//////      top: 0;
-//////      left: 0;
-//////padding: 0 0 100%;
-//    }
-    //margin-right: 0;
     h3 {
-      //@include current-font(60px,100,100%);
       @include adaptiv-font(60,32);
       font-weight: 100;
       font-family: 'Raleway', sans-serif;
@@ -170,13 +128,11 @@
       span {
         @include adaptiv-font(60,32);
         font-weight: 700;
-        //@include current-font(60px,700,100%);
       }
     }
     p {
       @include adaptiv-font(24,16);
       font-weight: 300;
-      //@include current-font(24px,300,250%);
       letter-spacing: 0.6px;
     }
     .main__button {
@@ -189,7 +145,7 @@
       display: inline-block;
       &:hover {
         background-color: $secondary-color;
-        color: #ffffff;
+        color: $background-color;
       }
     }
   }
